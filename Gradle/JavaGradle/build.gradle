@@ -60,10 +60,11 @@ task runFractionArgs(type: JavaExec) {
 
   main = 'Fraction'
   
-  
-  // default arguments if non are given
-  args '2'
-  args '8'
+  if (project.hasProperty("num1") && project.hasProperty("num2")) {
+    args(project.getProperty('num1'), project.getProperty('num2'));
+  } else if (project.hasProperty("num1")){
+    args(project.getProperty('num1'), 1);
+  }
 }
 
 // Try:
