@@ -43,8 +43,10 @@ public class Fraction {
          // Fraction *frac = [[Fraction alloc] init];
          Fraction frac = new Fraction();
           if (args.length == 2) {
-         frac.setNumerator(args[0]);
-         frac.setDenominator(args[1]);
+         frac.setNumerator(4);
+         frac.setDenominator(16);
+         //frac.setNumerator(Integer.parseInt(args[0]));
+         //frac.setDenominator(Integer.parseInt(args[1]));
           }
          else
          {
