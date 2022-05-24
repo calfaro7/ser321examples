@@ -52,6 +52,8 @@ task runFraction(type: JavaExec) {
 }
 
 // task that runs the Fraction Main which uses (2) arguments: gradle runFractionArgs
+//example:gradle runFractionArgs -Pnum=4 and -Pden=16
+//output: 4/16
 task runFractionArgs(type: JavaExec) {
   group 'Fraction Tasks'
   description 'Tasks which runs Fraction with no arguments'
