@@ -45,7 +45,7 @@ public class Fraction {
           if (args.length == 2) {
              if(Integer.parseInt(args[1]) == 0)
              {
-                System.out.println("Denominator cannot equal 0, exiting...);
+                System.out.println("Denominator cannot equal 0, exiting...");
                   return;
              }
          frac.setNumerator(Integer.parseInt(args[0]));
